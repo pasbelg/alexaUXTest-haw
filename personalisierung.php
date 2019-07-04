@@ -2,7 +2,9 @@
 error_reporting(0);
 require_once('functions/fileFunctions.php');
 $postData = $_POST['testpersonAuswahl'];
+//Daten aus der CSV werden in ein Array geschrieben
 $userData = explode('|', $postData);
+//Abfragen und speichern der Anzahl der Sounddateien für die jeweilige Testperson
 $fileCount = countSounds($userData[2]);
 ?>
 <!DOCTYPE html>
@@ -15,6 +17,7 @@ $fileCount = countSounds($userData[2]);
   </head>
   <body>
   <?php
+  //Schleife für die Anzeige der Einzelnen Alexainteraktionen
   for ($i = 1; $i <= $fileCount; $i++){
     echo 
     '<div class="interaction">
