@@ -1,0 +1,96 @@
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@font-face {
+	font-family: "Product Sans";
+	src: url("https://fonts.gstatic.com/s/productsans/v7/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2") format("woff2");
+}
+
+body {
+	font-family: "Product Sans";
+	background: rgb(55, 55, 55);
+	color: white;
+}
+.interaction{
+    width:100%;
+    height:300px;
+    margin:auto;
+    border: 2px solid gray;
+	background-color: rgba(46, 138, 138, 0.5);
+}
+.content{
+    padding:20px;
+    text-align: center;
+}
+
+
+#mainSelector{
+    margin-top:50px;
+    width:100%;
+    text-align: center;
+}
+select {
+    width:400px;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8nwYAAmoBZ0eMiB8AAAAASUVORK5CYII=) repeat;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,.3);
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    height: 50px;
+    outline: none;
+    padding-left: 10px;
+  }
+
+  select option {
+    color: #666;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select:focus::-ms-value {
+    background-color: transparent;
+  }
+  button{
+    margin-top: 300px;
+    bottom: 10px;
+    background:rgba(46, 138, 138, 0.5);
+    color:#fff;
+    border:none;
+    position:relative;
+    height:60px;
+    font-size:20px;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+  }
+  button:hover{
+    background:rgb(37, 37, 37);
+    color:rgb(65, 197, 197);
+  }
+  button:before,button:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: rgba(46, 138, 138, 1);
+    transition:400ms ease all;
+  }
+  button:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  button:hover:before,button:hover:after{
+    width:100%;
+    transition:300ms ease all;
+  }
+  select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+}
